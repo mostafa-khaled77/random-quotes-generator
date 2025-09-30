@@ -1,0 +1,109 @@
+/* Start Glopal */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --main-font: "Caveat", cursive;
+  --primary-font: "Gideon Roman", serif;
+  --main-color: rgba(0, 255, 255, 0.5);
+}
+::selection {
+  background-color: var(--main-color);
+  color: white;
+}
+/* End Glopal  */
+.container {
+  background-color: #456882;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+}
+.container div.content {
+  background-color: #1b3c53;
+  margin: 20px;
+  padding: 25px;
+  border-radius: 25px;
+  transition: all 0.4s ease-in-out;
+}
+.container div.content:hover {
+  transform: scale(1.03);
+  box-shadow: 5px 5px 15px 0px var(--main-color),
+    -5px -5px 15px 0px var(--main-color);
+}
+.container div.content h1 {
+  color: var(--main-color);
+  font-size: 100px;
+  font-weight: bolder;
+  font-family: var(--main-font);
+  margin-bottom: 70px;
+  position: relative;
+}
+.container div.content h1::after {
+  content: "";
+  width: 100px;
+  height: 3px;
+  border-radius: 10px;
+  background-color: var(--main-color);
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+@media screen and (max-width: 600px) {
+  .container div.content h1 {
+    font-size: 45px;
+  }
+}
+.content p:first-of-type {
+  color: #d3d6d5;
+  font-family: var(--primary-font);
+  font-size: 30px;
+  margin-bottom: 25px;
+}
+@media screen and (max-width: 600px) {
+  .content p:first-of-type {
+    font-size: 20px;
+  }
+}
+#btn {
+  cursor: pointer;
+  text-decoration: none;
+  padding: 15px 25px;
+  border-radius: 35px;
+  border: none;
+  font-family: var(--main-font);
+  background-color: var(--main-color);
+  color: #ffffff;
+  font-size: 23px;
+  font-weight: bolder;
+}
+#btn:active {
+  transform: translateY(4px);
+  background-color: #485394da;
+}
+#quote {
+  margin: 35px 0px 20px 0px ;
+}
+#quote,
+#author {
+  color: #f3f3f3;
+  font-family: var(--primary-font);
+  font-style: italic;
+  font-size: 20px;
+  min-height: 70px;
+  max-width: 600px;
+  width: 100%;
+  margin-inline: auto;
+  word-break: break-word;
+}
+@media screen and (max-width: 600px) {
+  #quote,
+  #author {
+    font-size: 16px;
+    min-height: 50px;
+  }
+}
