@@ -9,3 +9,6 @@ Open `index.html` in your browser and click the "New Quote" button to get a rand
 - HTML
 - CSS
 - JavaScript
+
+
+Live Demo : https://mostafa-khaled77.github.io/random-quotes-generator/
